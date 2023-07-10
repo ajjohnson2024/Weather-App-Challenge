@@ -21,43 +21,46 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1>New York</h1>
-        <ul>
-          <li>Sunday 07:20</li>
-          <li>Partly Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="partly_cloudy"
-            />
-
-            12°C | °F
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/h</li>
-            </ul>
+        <div class="weather-app-wrapper">
+          <h1>New York</h1>
+          <ul>
+            <li>Sunday 07:20</li>
+            <li>Cloudy</li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="weather-temperture">
+                <img src= https://ssl.gstatic.com/onebox/weather/64/cloudy.png
+                alt="cloudy" id="icon" />
+                <span class="location" style="display: inline">12</span>
+                <span class="units"> °C| <a href="#">°F</a></span>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2 km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <h2></h2>
-
-      <form id="search-form">
-        <input
-          type="text"
-          placeholder="Search for city"
-          autocomplete="off"
-          autofocus="on"
-          id="search-text-input"
-        />
-
-        <input type="submit" value="Search" />
-      </form>
     </div>
+
+    <h2></h2>
+
+    <form id="search-form">
+      <input
+        type="text"
+        placeholder="Search for city"
+        autocomplete="off"
+        autofocus="on"
+        id="search-text-input"
+      />
+
+      <input type="submit" value="Search" />
+    </form>
 
     <div class="row mt-4">
       <div class="col">
@@ -122,8 +125,8 @@
           href="https://github.com/ajjohnson2024/Weather-App-Challenge"
           target="_blank"
           >Open-source code</a
-        >, by Allison Johnson</small
-      >
+        >, by Allison Johnson
+      </small>
     </div>
 
     <script src="src/index.js"></script>
